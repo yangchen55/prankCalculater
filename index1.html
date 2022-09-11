@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Prank calculater</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculater">
+        <button id="display" class="display">0.00</button>
+        <button class="btn-ac">AC</button>
+        <button class="btn-c">C</button>
+        <button class="btn-perc">%</button>
+        <button class="btn-divide">/</button>
+        <button class="btn-7">7</button>
+        <button class="btn-8">8</button>
+        <button class="btn-9">9</button>
+        <button class="btn-mult">*</button>
+        <button class="btn-4">4</button>
+        <button class="btn-5">5</button>
+        <button class="btn-6">6</button>
+        <button class="btn-minus">-</button>
+        <button id="one" class="btn-1" onclick="one();">1</button>
+        <button id="two" class="btn-2" onclick="two();">2</button>
+        <button id="three" class="btn-3" onclick="three();">3</button>
+        <button id="sum" class="btn-plus" onclick="sum();">+</button>
+        <button class="btn-0">0</button>
+        <button class="btn-dot">.</button>
+        <button class="btn-equal">=</button>
+      </div>
+      <div class="round"></div>
+    </div>
+    <script>
+      function one() {
+        var one = document.getElementById("one").innerHTML;
+        var one = Number(one);
+        document.getElementById("display").innerHTML = one;
+      }
+      function two() {
+        var two = document.getElementById("two").innerHTML;
+        var two = Number(two);
+        document.getElementById("display").innerHTML = two;
+      }
+      function three() {
+        var three = document.getElementById("three").innerHTML;
+        var three = Number(three);
+        document.getElementById("display").innerHTML = three;
+      }
+
+      function sum() {
+        var one = document.getElementById("one").innerHTML;
+        var one = Number(one);
+        var two = document.getElementById("two").innerHTML;
+        var two = Number(two);
+        var sum = document.getElementById("sum").innerHTML;
+        document.getElementById("display").innerHTML = one + two;
+      }
+    </script>
+  </body>
+</html>

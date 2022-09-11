@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+    221.4deg,
+    #a35d8f 23.43%,
+    rgba(63, 153, 48, 0.54) 72.15%
+  );
+  display: flex;
+  /* ?? */
+  justify-content: center;
+  align-items: center;
+}
+.calculater {
+  background: linear-gradient(
+    213.5deg,
+    #19b846 10.22%,
+    rgba(217, 217, 217, 0.54) 91.91%
+  );
+  backdrop-filter: blur(17px);
+  width: 500px;
+  display: grid;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 2rem;
+  grid-template-areas:
+    "display display display display"
+    "ac c percentage divide"
+    "btn7 btn8 btn9 mult"
+    "btn4 btn5 btn6 minus"
+    "btn1 btn2 btn3 plus"
+    "btn0 btn0 btdot equals";
+  position: relative;
+  color: white;
+}
+
+.calculater button {
+  height: 50px;
+  /* width: 50px; */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: black;
+  font-size: 2rem;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.calculater button:not(:first-child) {
+  background-color: #a18399;
+  color: white;
+}
+.display {
+  grid-area: display;
+}
+.btn-ac {
+  grid-area: ac;
+}
+.btn-c {
+  grid-area: c;
+}
+.btn-percentage {
+  grid-area: percentage;
+}
+.btn-divide {
+  grid-area: divide;
+}
+
+.btn-7 {
+  grid-area: btn7;
+}
+.btn-8 {
+  grid-area: btn8;
+}
+.btn-9 {
+  grid-area: btn9;
+}
+.btn-mult {
+  grid-area: mult;
+}
+.btn-4 {
+  grid-area: btn4;
+}
+.btn-5 {
+  grid-area: btn5;
+}
+.btn-6 {
+  grid-area: btn6;
+}
+.btn-minus {
+  grid-area: minus;
+}
+.btn-1 {
+  grid-area: btn1;
+}
+.btn-2 {
+  grid-area: btn2;
+}
+.btn-3 {
+  grid-area: btn3;
+}
+.btn-plus {
+  grid-area: plus;
+}
+.btn-0 {
+  grid-area: btn0;
+}
+.btn-dot {
+  grid-area: btdot;
+}
+.btn-eqaul {
+  grid-area: equals;
+}
+
+.round {
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  background: #dc13b0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: -2;
+}
