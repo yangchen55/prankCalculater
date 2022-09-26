@@ -131,3 +131,21 @@ body {
   z-index: -1;
   backdrop-filter: blur(20);
 }
+.prank {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: traslateX(10px);
+  }
+  25% {
+    transform: traslateX(-10px);
+  }
+  75% {
+    transform: traslateX(10px);
+  }
+  100% {
+    transform: traslateX(-10px);
+  }
+}
